@@ -1,0 +1,647 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navbar{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    gap: 100px;
+    display: flex;
+    align-items: center;
+    margin-left: 43px;
+    margin-top: 20px;
+    margin-bottom: 22px;
+}
+
+@font-face {
+    font-family: 'stem-light';
+    src: url(./stem-light.ttf);
+}
+
+@font-face{
+    font-family: 'trakya-rounded';
+    src: url(./bulent-yuksel-trakya-rounded.otf);
+}
+
+@font-face{
+    font-family: 'cannon-SC';
+    src: url(./Cannon-SCmedium.ttf);
+}
+
+@font-face{
+    font-family: 'articulatcf-eb';
+    src: url(./Fontspring-DEMO-articulatcf-extrabold-BF64a38d8b06d4e.otf);
+}
+
+@font-face{
+    font-family: 'kamercyrillic';
+    src: url(./Kamerik105Cyrillic-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'ITC';
+    src: url(./ITC\ Avant\ Garde\ Gothic\ LT\ Bold.otf);
+}
+
+@font-face{
+    font-family: 'tobo';
+    src: url(./Toboggan-Light.otf);
+}
+
+.navbar ul li{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 5vh;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-family: "stem-light", sans-serif;
+    color: gray;
+    letter-spacing: 0.5px;
+}
+
+.navbar ul li a span{
+    color: black;
+}
+
+.navbar .logo{
+    font-family: 'trakya-rounded', sans-serif;
+    color: red;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.navbar ul li .login{
+    text-decoration: none;
+    font-family: "stem-light", sans-serif;
+    color: black;
+    margin-left: 80vh;
+}
+
+.navbar ul li .icons{
+    color: rgb(40, 40, 40);
+}
+
+.grey-bg{
+    background-color: rgba(183, 179, 179, 0.563);
+    margin: auto;
+    width: 96%;
+    height: 110vh;
+    border-radius: 20px;
+}
+
+.grey-bg h1{
+    font-family: "Montserrat", Sans-serif;
+    font-size: 180px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    line-height: 100px;
+    letter-spacing: -2.9px;
+    margin-left: 15vh;
+    margin-top: 30%;
+    color:#f8f8f8;
+}
+
+.grey-bg img{
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 50px;
+    max-width: 85%;
+}
+
+.grey-bg h2{
+    font-family: 'articulatcf-eb', sans-serif;
+    font-size: 80px;
+    margin-left: 17vh;
+    margin-top: -225px;
+}
+
+.grey-bg h3{
+    font-family: 'kamercyrillic';
+    color: black;
+    font-size: 28px;
+    margin-left: 17vh;
+    margin-top: -150px;
+}
+
+.grey-bg .shop{
+    width: 183px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.744);
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-family: "stem-light", sans-serif;
+    border-radius: 25px;
+    margin-top: 280px;
+    margin-left: 125px;
+}
+
+.grey-bg h4 {
+    font-family: 'articulatcf-eb', sans-serif;
+    margin-left: 85%;
+}
+
+.grey-bg .d1{
+    font-family: "stem-light", sans-serif;
+    margin-left: 72.5%;
+    color: grey;
+    margin-top: 10px;
+}
+
+.grey-bg .d2{
+    font-family: "stem-light", sans-serif;
+    margin-left: 74%;
+    color: grey;
+}
+
+.grey-bg .d3{
+    font-family: "stem-light", sans-serif;
+    margin-left: 74.5%;
+    color: grey;
+}
+
+.items1-3{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 35px;
+}
+
+.earphone {
+    background-color: rgba(0, 0, 0, 0.801);
+    width: 45vh;
+    height: 50vh; 
+    border-radius: 20px;
+}
+
+.earphone h1{
+    font-family: "Montserrat", Sans-serif;
+    color: rgba(80, 77, 77, 0.742);
+    margin-top: 58%;
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: 35px;
+}
+
+.earphone h2{
+    font-family: 'articulatcf-eb', sans-serif;
+    color:white;
+    font-size: 30px;
+    margin-left: 35px;
+    margin-top: -25%;
+}
+
+.earphone h3{
+    font-family: 'kamercyrillic';
+    color:white;
+    font-size: 15px;
+    margin-left: 35px;
+    margin-top: -18%;
+}
+
+.earphone img{
+    position: absolute;
+    max-width: 85%;
+    margin-left: -40px;
+    margin-top: -24vh;
+}
+
+.earphone button{
+    width: 110px;
+    height: 40px;
+    background-color: rgb(247, 32, 32);
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-family: "stem-light", sans-serif;
+    border-radius: 25px;
+    margin-top: 30%;
+    margin-left: 35px;
+}
+
+.s-watch{
+    background-color: rgba(255, 191, 0, 0.807);
+    width: 45vh;
+    height: 50vh;
+    border-radius: 20px;
+    margin-left: 35px;
+}
+
+.s-watch h1{
+    font-family: "Montserrat", Sans-serif;
+    color: rgba(255, 255, 255, 0.547);
+    margin-top: 58%;
+    font-size: 40px;
+    font-weight: 1000;
+    margin-left: 35px;
+}
+
+.s-watch h2{
+    font-family: 'articulatcf-eb', sans-serif;
+    color:white;
+    font-size: 30px;
+    margin-left: 35px;
+    margin-top: -25%;
+}
+
+.s-watch h3{
+    font-family: 'kamercyrillic';
+    color:white;
+    font-size: 15px;
+    margin-left: 35px;
+    margin-top: -20%;
+}
+
+.s-watch img{
+    position: absolute;
+    max-width: 80%;
+    margin-left: 23px;
+    margin-top: -20vh;
+}
+
+.s-watch button{
+    width: 110px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    color: rgba(255, 191, 0, 0.807);
+    font-size: 15px;
+    font-family: "stem-light", sans-serif;
+    border-radius: 25px;
+    margin-top: 33%;
+    margin-left: 35px;
+}
+
+.laptop{
+    background-color: rgba(255, 0, 0, 0.744);
+    width: 97vh;
+    height: 50vh;
+    border-radius: 20px;
+    margin-left: 35px;
+}
+
+.laptop h1{
+    font-family: "Montserrat", Sans-serif;
+    color: rgba(255, 255, 255, 0.305);
+    margin-top: 25%;
+    font-size: 60px;
+    font-weight: 1000;
+    margin-left: 75px;
+}
+
+.laptop h2{
+    font-family: 'articulatcf-eb', sans-serif;
+    color:white;
+    font-size: 30px;
+    margin-left: 75px;
+    margin-top: -15%;
+}
+
+.laptop h3{
+    font-family: 'kamercyrillic';
+    color:white;
+    font-size: 15px;
+    margin-left: 75px;
+    margin-top: -10%;
+}
+
+.laptop img{
+    position: absolute;
+    max-width: 80%;
+    margin-left: 158px;
+    margin-top: -20vh;
+}
+.laptop button{
+    width: 110px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    color: rgba(255, 0, 0, 0.744);
+    font-size: 15px;
+    font-family: "stem-light", sans-serif;
+    border-radius: 25px;
+    margin-top: 18%;
+    margin-left: 75px;
+}
+
+.items4-6{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 35px;
+}
+
+.ps-5{
+    background-color: rgba(145, 141, 141, 0.188);
+    width: 95vh;
+    height: 50vh;
+    border-radius: 20px;
+}
+
+.ps-5 h1{
+    font-family: "Montserrat", Sans-serif;
+    color: white;
+    margin-top: 25%;
+    font-size: 60px;
+    font-weight: 1000;
+    margin-left: 50px;
+}
+
+.ps-5 h2{
+    font-family: 'articulatcf-eb', sans-serif;
+    color: black;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: -15%;
+}
+
+.ps-5 h3{
+    font-family: 'kamercyrillic';
+    color: black;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: -10%;
+}
+
+.ps-5 img{
+    position: absolute;
+    margin-left: 52vh;
+    margin-top: -10vh;
+    height: auto;
+    width: 40vh;
+}
+
+.ps-5 button{
+    width: 110px;
+    height: 40px;
+    color: white;
+    border: none;
+    background-color: rgb(247, 32, 32);
+    font-size: 15px;
+    font-family: "stem-light", sans-serif;
+    border-radius: 25px;
+    margin-top: 18%;
+    margin-left: 50px;
+}
+
+.vr {
+    background-color: rgba(23, 212, 23, 0.652);
+    width: 45vh;
+    height: 50vh; 
+    border-radius: 20px;
+    margin-left: 35px;
+}
+
+.vr h1{
+    font-family: "Montserrat", Sans-serif;
+    color: rgba(255, 255, 255, 0.305);
+    margin-top: 40%;
+    font-size: 60px;
+    font-weight: 1000;
+    margin-left: 35px;
+}
+
+.vr h2{
+    font-family: 'articulatcf-eb', sans-serif;
+    color: white;
+    font-size: 30px;
+    margin-left: 35px;
+    margin-top: -35%;
+}
+
+.vr h3{
+    font-family: 'kamercyrillic';
+    color: white;
+    font-size: 15px;
+    margin-left: 35px;
+    margin-top: -20%;
+}
+
+.vr button{
+    width: 110px;
+    height: 40px;
+    color: rgba(23, 212, 23, 0.652);
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    font-family: "stem-light", sans-serif;
+    border-radius: 25px;
+    margin-top: 40%;
+    margin-left: 35px;
+}
+
+.vr img{
+    position: absolute;
+    margin-left: 0vh;
+    margin-top: 5vh;
+    width: 45vh;
+    height: auto;
+}
+
+.bt{
+    background-color: rgba(25, 25, 239, 0.849);
+    width: 47vh;
+    height: 50vh;
+    border-radius: 20px;
+    margin-left: 35px;
+}
+
+.bt h1{
+    font-family: "Montserrat", Sans-serif;
+    color: rgba(255, 255, 255, 0.305);
+    margin-top: 35%;
+    font-size: 50px;
+    font-weight: 1000;
+    margin-left: 35px;
+}
+
+.bt h2{
+    font-family: 'articulatcf-eb', sans-serif;
+    color: white;
+    font-size: 30px;
+    margin-left: 35px;
+    margin-top: -28%; 
+}
+
+.bt h3{
+    font-family: 'kamercyrillic';
+    color: white;
+    font-size: 15px;
+    margin-left: 35px;
+    margin-top: -20%;
+}
+
+.bt button{
+    width: 110px;
+    height: 40px;
+    color: rgba(25, 25, 239, 0.849);
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    font-family: "stem-light", sans-serif;
+    border-radius: 25px;
+    margin-top: 40%;
+    margin-left: 35px;
+}
+
+.bt img{
+    position: absolute;
+    margin-left: 10vh;
+    margin-top: 13vh;
+    width: 45vh;
+    height: auto;
+}
+
+.info{
+    margin-left: 150px;
+    display: flex;
+    gap: 25vh;
+    margin-top: 25px;
+}
+
+.info h5{
+    font-family: "Montserrat", Sans-serif;
+    font-size: 18px;
+}
+
+.tempo img{
+    height: auto;
+    width: 75px;
+    position: absolute;
+    margin-top: -45px;
+    margin-left: 70px;
+}
+
+.money img{
+    height: auto;
+    width: 65px;
+    position: absolute;
+    margin-top: -55px;
+    margin-left: 60vh;
+}
+
+.support img{
+    height: auto;
+    width: 65px;
+    position: absolute;
+    margin-top: -55px;
+    margin-left: 106vh;
+}
+
+.pay img{
+    height: auto;
+    width: 65px;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 156vh;
+}
+
+.sale{
+    background-color: rgba(255, 0, 0, 0.744);
+    width: 97vh;
+    height: 65vh;
+    border-radius: 20px;
+    margin-top: 38vh;
+    margin-left: 35px;
+    width: 96%;
+}
+
+.sale .left h1{
+    font-family: "Montserrat", Sans-serif;
+    color: white;
+    margin-top: 8%;
+    font-size: 100px;
+    font-weight: 1000;
+    margin-left: 16%;
+}
+
+.sale .left p{
+    font-family: "stem-light", sans-serif;
+    color: white;
+    margin-top: -34vh;
+    font-size: 15px;
+    margin-left: 16%;
+}
+
+.sale .left .date{
+    font-family: "stem-light", sans-serif;
+    color: white;
+    margin-top: 31vh;
+    font-size: 15px;
+    margin-left: 16%;
+}
+
+.left img{
+    position: absolute;
+    margin-top: -77vh;
+}
+
+.right h1{
+    font-family: "ITC", sans-serif;
+    color: white;
+    margin-top: -12%;
+    font-size: 45px;
+    font-weight: 800;
+    margin-left: 125vh;
+}
+
+.right h5{
+    font-family: "ITC", sans-serif;
+    color: white;
+    margin-top: -7%;
+    font-size: 18px;
+    margin-left: 125vh;
+}
+
+.right p{
+    font-family: "stem-light", sans-serif;
+    color: white;
+    margin-top: 7%;
+    font-size: 18px;
+    margin-left: 125vh;
+}
+
+.right button{
+    width: 110px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    color: rgba(255, 0, 0, 0.744);
+    font-size: 15px;
+    font-family: "stem-light", sans-serif;
+    border-radius: 25px;
+    margin-top: 3%;
+    margin-left: 125vh;
+}
+
+.end h2{
+    font-family: "ITC", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: black;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.end p{
+    font-family: "stem-light", sans-serif;
+    color: gray;
+    text-align: center;
+    font-size: 18px;
+}
